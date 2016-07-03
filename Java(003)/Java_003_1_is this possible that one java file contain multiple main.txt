@@ -1,0 +1,33 @@
+Q :- Is this possible that one java file contain multiple main?
+
+A :- Yes, one java file can contain multiple main functions.
+		some latest versions of jdk (java developer kit) support multiple main functions in single java file.
+		
+		let see example...
+		here two different classes are there 'Test' & 'Test2'. both the classes have main function. main function of class Test is call main function of class Test2. here make sure that main function have parameter String Array, so you have to pass the String array when time you call main function of Test2 class. if you declare main without parameter than compiler shows error.
+
+		let see how to compile & run this program...
+		first of all copy the source code & create java file. now open command prompt or terminal. make sure that path variable is properly set on your pc. now change the current working directory to the directory contain source file.
+		suppose the source file Test.java is in the desktop folder, so the working directory must look like "C:\Users\admin\Desktop>".
+		now run following command on your terminal to compile Test.java..
+			javac Test.java
+		now you can see two class files created in the same folder 'Test.class' & 'Test2.class'.
+		now run following command to run your java program.
+			java Test
+		Here make sure that you enter 'Test' without any extension. output must look like this..
+			hello
+			it's Test
+			it's Test2
+		let see what happen..
+		when we enter command 'java Test' main method of the class 'Test' is executed. so "hello" & "it's Test" lines are printed on console. now main of the class 'Test2' is called by the main of the class 'Test' with the String Array 'a'. so line "it's test2" is printed on screen. 
+		here one more thing to mention that Test in the command 'java Test' refers 'Test.class' file not 'Test.java'.
+		you can run the program by calling main method of class 'Test2' using following command..
+			java Test2 "hello guys"
+		output must like this..
+			hello guys
+		here "Hello guys" command line argument. it is required int this case. if you do not pass the command line argument than it shows exception 'java.lang.ArrayIndexOutOfBoundsException'.
+		either you have to pass the command line argument or modify the code as following.
+		replace following line..
+			System.out.println(a[0]);
+		with following line..
+			System.out.println("you can type here anything.");
