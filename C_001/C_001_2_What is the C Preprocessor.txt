@@ -1,0 +1,17 @@
+Q. What is the C Preprocessor?
+
+A. What are Preprocessor directives? What is the Build Process? Does our C source code directly gets passed to the 
+   compiler? Answer to all these questions is PREPROCESSOR. Preprocessor , as the name suggests, is a progarm that 
+   processes our source code before it is passed to a compiler.As we all know there are several steps involved from 
+   stage of writing a program to the stage of getting it executed. For example preprocessing, compiling, assembling,
+   linking,etc. . The combination of all these steps is called Build Process.But let's focus right now on preprocessing.
+   Preprocessor works on source code(C program) and creates 'Expanded Source Code'. If the source code is stored in a 
+   file PRG1.C then expanded source code is stored in a file PRG1.I. And this expanded source code is sent to the compiler.
+   Proprocessor provides many features called preprocessor directives. Each of these preprocessor directives begin with a 
+   '#' symbol. Following are preprocessor directives:
+     (i)   Macro expansion
+     (ii)  File inclusion
+     (iii) Conditional Compilation
+     (iv)  Miscellaneos directives
+   These directives can be placed anywhere in a progarm but are usually placed in the beginning of the progarm, before 
+   the first function definition. 
