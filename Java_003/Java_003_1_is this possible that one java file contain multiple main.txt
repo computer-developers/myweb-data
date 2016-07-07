@@ -4,7 +4,9 @@ A :- Yes, one java file can contain multiple main functions.
 		some latest versions of jdk (java developer kit) support multiple main functions in single java file.
 		
 		let see example...
-		here two different classes are there 'Test' & 'Test2'. both the classes have main function. main function of class Test is call main function of class Test2. here make sure that main function have parameter String Array, so you have to pass the String array when time you call main function of Test2 class. if you declare main without parameter than compiler shows error. here main of class Test2 can be non static, to do so we have to create object of class Test2.
+		here two different classes are there 'Test' & 'Test2'. both the classes have main function. main function of class Test is call main function of class Test2. here make sure that main function have parameter String Array, so you have to pass the String array when time you call main function of Test2 class.
+		If you declare main without parameter than compiler shows error.
+		Here main of class Test2 can be non static, to do so we have to create object of class Test2.
 
 		let see how to compile & run this program...
 		run Test, output must like this.. 
