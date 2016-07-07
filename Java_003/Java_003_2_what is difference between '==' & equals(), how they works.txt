@@ -1,1 +1,14 @@
+Q :- Java_003_2_what is difference between '==' & equals(), how they works?
 
+A :- there is no difference between '==' & equals on result perspective except some error in '=='.
+		first of all equals is method define in Object class which is base class of all classes & '==' is a logical operator. which over loaded when we use object as operand.
+		
+		equals method...
+		as mention above equals define in Object class. so all the objects in java have equals method. Syntax of equals method is as follow..
+			boolean equals(Object obj)
+		default implementation of equals method return true if object pass to the method is same object by which it is invoked. here same means same memory reference not data member having same value. otherwise it shows false.
+		in some case programmers override the default implementation of equals method.
+		
+		'==' operator...
+		as we know '==' is logical operator. it return true if it's both operand point to the same object or same memory location like equals method. there is error if instant having different data type used as operand in the case of '=='. while equals returns false in that condition. this is the one of the main difference between '==' & equals method.
+		
