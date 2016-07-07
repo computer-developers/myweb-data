@@ -1,10 +1,23 @@
 Q:what is the difference between call by value and call by reference?
 
-A:  In call by value method,the CALLED function creates a new copy set of variables and copies the value of actual parameter into them. 
-    The fuction does not have access to the actual variable in the calling program and can work only on copies of value.It does not alter the value of the original variable in calling program.
+A:	In call by value method,the CALLED function creates a new copy set of variables and copies the value of actual parameter into them.
+    The function does not have access to the actual variable in the calling program and can work only on copies of value. It does not alter the value of the original variable in calling program.
     By default C++ uses call by value to pass argument.
-
-
+	
+	let's see the example..
+	here we call swap function with call by value. it work on copy of variable a & b. so value of variables remain unchanged after calling swap function.
+	
     In call by reference ,the FORMAL arguments in the called function becomes aliases to the ACTUAL arguments in the calling function.
-    This means that when the function is working with its own argument,it is actually working on its original data.Eg.bubble sort
+    This means that when the function is working with its own argument,it is actually working on its original data.
+		Eg:- bubble sort
+
+	there are two methods for call by reference.
+	
+	1. method with reference variable as parameter..
+		in this method when the method called variable passed to the method & method must have reference variable.
+		let's see example..
+		
+	2. method with pointer variable as parameter..
+		in this method when the method called address of variable(s) passed to the method & method must have pointer(s) as parameter.
+		let's see example..
 	
