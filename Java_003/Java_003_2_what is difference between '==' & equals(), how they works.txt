@@ -12,3 +12,6 @@ A :- there is no difference between '==' & equals on result perspective except s
 		'==' operator...
 		as we know '==' is logical operator. it return true if it's both operand point to the same object or same memory location like equals method. there is error if instant having different data type used as operand in the case of '=='. while equals returns false in that condition. this is the one of the main difference between '==' & equals method.
 		
+		let see example...
+		
+		here we can see that '==' operator & equals method shows error if one of the reference variable is null.
